@@ -1,0 +1,7 @@
+Makefile
+npm-debug.log
+Dockerfile
+node_modules
+.git
+.idea
+.dockerignore

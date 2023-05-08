@@ -5,24 +5,24 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Docker Course</title>
+  <title>Notes</title>
   <link rel="stylesheet" href="/theme.css">
 </head>
 <body>
   <nav class="navbar">
-    <h3>Docker Course</h3>
+    <h3>Notes</h3>
   </nav>
 
   <div class="container with-nav">
     <div class="card">
-      <h2>Add new Log</h2>
+      <h3>Add new note</h3>
 
       <form action="/" method="post">
         <div class="form-control">
-          <input name="text" type="text" placeholder="add log here...">
+          <input name="text" type="text" placeholder="input new note here...">
         </div>
 
-        <button type="submit" class="btn primary">Add</button>
+        <button type="submit" class="btn primary">SAVE</button>
       </form>
 
       <hr />
@@ -31,11 +31,11 @@
         <p>No logs now</p>
       <% } %>
 
-      <ul>
+      <ol>
         <% for (let i = 0; i < logs.length; i++) {%>
-          <li><%= logs[i] %></li>
+          <li><strong><%= logs[i] %></strong></li>
         <% } %>
-      </ul>
+        </ol>
     </div>
   </div>
 </body>
